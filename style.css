@@ -1,30 +1,99 @@
-
 /* Navbar */
-.fs-4 {
+.judul {
+  margin-left: 20px;
+  color: white;
   font-weight: 750;
 }
+
 /* Tampilan Home */
-.tampilan_utama {
-  height: 500px;
-  background-color: #f5f5f7;
+.tampilan_home{
+  height: 630px;
+  box-shadow: 1px 1px 10px;
   color: black;
+  border-color: green;
+  margin-top: 50px;
+  padding-top: 60px;
+  background-image: url(img/bg-home.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-teks {
+  padding-top: 80px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 100px;
 }
 .m_amer {
-  height: 150px;
+  height: 420px;
   margin: 0px auto;
-  margin-top: 95px ;
-  border: solid;
-  border-color: white;
+  box-shadow: 1px 1px 10px;
+  border-color: blue;
+
 }
 .h2 {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .p1 {
+  margin-top: 20px;
   text-align: center;
 }
+
 /* Isi My Work */
 .my_work_isi {
-  height: 400px;
+  height: 600px;
+  margin-top: 100px;
+}
+.h2-mywork {
   margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+.col-mywork1 {
+  height: 280px;
+  border: none;
+}
+.col-mywork2 {
+  height: 280px;
+}
+
+/* About Me */
+.aboutme {
+  margin-top: 100px;
+  padding-top: 50px;
+  height: 350px;
+}
+.p-aboutme {
+  margin-top: 20px;
+}
+.btn-group {
+  margin-top: 20px;
+}
+.twitter {
+  border: none;
+  background-color: white;
+  
+}
+.ig {
+  border: none;
+  background-color: white;
+}
+.linkedin {
+  border: none;
+  background-color: white;
+}
+.github {
+  border: none;
+  background-color: white;
+}
+.hire-me {
+
+}
+/* Footer */
+.footer{
+  margin: 0;
+  margin-top: 50px;
+  height: 30px;
 }

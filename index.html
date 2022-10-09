@@ -9,22 +9,22 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <!-- Header -->
-  <nav>
+  <nav class=" sticky-top">
     <h1 class="visually-hidden"></h1>
-    <div class="container">
+    <div class="container-fluid bg-dark ">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <span class="fs-4">My Portofolio</span>
+          <span class="judul fs-4">My Portofolio</span>
         </a>
   
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link a ctive" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="my_work" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="about_me" class="nav-link">About Me</a></li>
         </ul>
       </header>
     </div>
@@ -33,21 +33,80 @@
 
   <!-- Tampilan Utama -->
   <!--Home -->
-  <div class="tampilan_utama container border  " >
-    <img class="m_amer d-flex flex-wrap justify-content-center rounded-circle" src="" alt="">
-    <h2 class="h2">Haloo, Nama Saya Muhammad Amer </h2>
-    <p class="p1 lh-lg fs-5">
-      Saya mahasiswa dari Universitas Buana Perjuangan Karawang. Saat ini saya sedang mengikuti di semester 3.<br>
-      Ini adalah project web pertama saya dan isi nya tentang portofolio atau cv saya sendiri.<br>
-      Semoga anda tertarik dengan portofolio ini dan selamat melihat-lihat.
-    </p>
+  <div  class="container" id="home">
+    <div class="tampilan_home d-flex row border rounded-2">
+      <div class="col-fotoku  col">
+        <img class="m_amer d-flex flex-wrap justify-content-center rounded-circle" src="img/Muhammad_aMer.jpeg" alt="">
+      </div>
+      <div class="col-teks col text-light">
+      <h2 class="h2 fs-2">Hai, Nama Saya <br><span class="fs-1"><bold>Muhammad Amer</bold></h2>
+      <p class="p1 lh-lg fs-5 text-wrap overflow-auto">
+        Saya mahasiswa dari Universitas Buana Perjuangan Karawang.<br>Saat ini saya sedang mengikuti perkuliahan di semester 3.<br>
+        Ini adalah project web pertama saya dan isi nya tentang portofolio atau cv saya sendiri.
+      </p>
+    </div>
   </div>  
+  <!-- End of Home -->
   <!-- My Work -->
-    <div class="my_work_isi container-fluid border border-primary">
+    <div class="my_work_isi container-fluid" id="my_work">
+      <h2 class="h2-mywork fs-1 text-center ">My Work</h2>
+      <div class="container text-center">
+        <div class="row">
+          <!-- Colomn 1 -->
+          <div class="col-mywork1 col ">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/pt.yimmwj.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title fs-3">PT.YIMMWJ</h5>
+                    <p class="card-text fs-5">Saya pernah bekerja di PT.YIMMWJ selama 2 tahun sebagai operator Produksi dibagian Body Assembeling. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Colomn 2 -->
+          <div class="col-mywork2 col ">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/pt.ypmi.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8 bg-dark text-light">
+                  <div class="card-body">
+                    <h5 class="card-title fs-3">PT.YPMI</h5>
+                    <p class="card-text fs-5">Setelah di PT.YIMMWJ saya bekerja di PT.YPMI selama 2 tahun dan bekerja sebagai operator machining.</p>        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!-- End of My Work -->
 
+  <!-- About Me -->
+  <div class="aboutme container-fluid" id="about_me">
+    <h2 class="aboutme-h2 fs-1 text-center">About Me</h2>
+    <p class="p-aboutme fs-5">Saya berasal dari Karawang. Umur saya 23 tahun dan dibawah ini adalah social media saya</p>
+    <div class="button-logo">
+      <button class="twitter"><img src="img/twitter.png" alt=""><a href="https://twitter.com/aMr6443"></a></button>
+      <button class="ig"><img src="img/ig.png"  alt=""><a href="https://www.instagram.com/m_amer29"></a></button>
+      <button class="ig"><img src="img/linkedin.png" href="https://www.linkedin.com/in/muhammad-amer-38b701235" alt=""></button>
+      <button class="ig"><img src="img/github.png" alt=""><a href="https://github.com/amer48-dev"></a></button>
+      <button type="button" class="hire-me btn btn-primary rounded-3"><a href="muhammad.amer45@gmail.com"></a> Send me E-mail</button>
     </div>
 
+  </div>
+  <!-- End of About Me -->
 
+
+  <!-- Footer -->
+  <div class="container-fluid footer border border-primary bg-dark text-white">
+
+  </div>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="script.js" ></script>
 </body>
